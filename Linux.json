@@ -1,0 +1,358 @@
+{
+    "0": [
+        "ip",
+        "from Iproute2, a collection of utilities for controlling TCP/IP networking and traffic control in Linux."
+    ],
+    "1": [
+        "ls",
+        "list directory contents."
+    ],
+    "2": [
+        "df",
+        "display disk space usage."
+    ],
+    "3": [
+        "du",
+        "estimate file space usage."
+    ],
+    "4": [
+        "free",
+        "display memory usage."
+    ],
+    "5": [
+        "scp",
+        "securely Copy Files Using SCP, with examples."
+    ],
+    "6": [
+        "find",
+        "locates files based on some user-specified criteria."
+    ],
+    "7": [
+        "ncdu",
+        "a disk utility for Unix systems."
+    ],
+    "8": [
+        "pstree",
+        "display a tree of processes."
+    ],
+    "9": [
+        "last",
+        "show a listing of last logged-in users."
+    ],
+    "10": [
+        "w",
+        "show a list of currently logged-in user sessions."
+    ],
+    "11": [
+        "grep",
+        "Search a file for a pattern of characters, then display all matching lines."
+    ],
+    "12": [
+        "uptime",
+        "shows system uptime and load average."
+    ],
+    "13": [
+        "top",
+        "shows an overall system view."
+    ],
+    "14": [
+        "vmstat",
+        "shows system memory, processes, interrupts, paging, block I/O, and CPU info."
+    ],
+    "15": [
+        "htop",
+        "interactive process viewer and manager."
+    ],
+    "16": [
+        "dstat",
+        "view processes, memory, paging, I/O, CPU, etc., in real-time. All-in-one for vmstat, iostat, netstat, and ifstat."
+    ],
+    "17": [
+        "iftop",
+        "network traffic viewer."
+    ],
+    "18": [
+        "nethogs",
+        "network traffic analyzer."
+    ],
+    "19": [
+        "iotop",
+        "interactive I/O viewer. Get an overview of storage r/w activity."
+    ],
+    "20": [
+        "iostat",
+        "for storage I/O statistics."
+    ],
+    "21": [
+        "netstat",
+        "for network statistics."
+    ],
+    "22": [
+        "ss",
+        "utility to investigate sockets."
+    ],
+    "23": [
+        "atop",
+        "For Linux server performance analysis."
+    ],
+    "24": [
+        "Glances and nmon",
+        "htop and top Alternatives:"
+    ],
+    "25": [
+        "ssh",
+        "secure command-line access to remote Linux systems."
+    ],
+    "26": [
+        "sudo",
+        "execute commands with administrative privilege."
+    ],
+    "27": [
+        "cd",
+        "directory navigation."
+    ],
+    "28": [
+        "pwd",
+        "shows your current directory location."
+    ],
+    "29": [
+        "cp",
+        "copying files and folders."
+    ],
+    "30": [
+        "mv",
+        "moving files and folders."
+    ],
+    "31": [
+        "rm",
+        "removing files and folders."
+    ],
+    "32": [
+        "mkdir",
+        "create or make new directories."
+    ],
+    "33": [
+        "touch",
+        "used to update the access date and modification date of a computer file or directory."
+    ],
+    "34": [
+        "man",
+        "for reading system reference manuals."
+    ],
+    "35": [
+        "apropos",
+        "Search man page names and descriptions."
+    ],
+    "36": [
+        "rsync",
+        "remote file transfers and syncing."
+    ],
+    "37": [
+        "tar",
+        "an archiving utility."
+    ],
+    "38": [
+        "gzip",
+        "file compression and decompression."
+    ],
+    "39": [
+        "bzip2",
+        "similar to gzip. It uses a different compression algorithm."
+    ],
+    "40": [
+        "zip",
+        "for packaging and compressing (to archive) files."
+    ],
+    "41": [
+        "locate",
+        "search files in Linux."
+    ],
+    "42": [
+        "ps",
+        "information about the currently running processes."
+    ],
+    "43": [
+        "cron",
+        "set up scheduled tasks to run."
+    ],
+    "44": [
+        "nmcli",
+        "command-line tool for controlling NetworkManager."
+    ],
+    "45": [
+        "ping",
+        "send ICMP ECHO_REQUEST to network hosts."
+    ],
+    "46": [
+        "traceroute",
+        "check the route packets take to a specified host."
+    ],
+    "47": [
+        "mtr",
+        "network diagnostic tool."
+    ],
+    "48": [
+        "nslookup",
+        "query Internet name servers (NS) interactively."
+    ],
+    "49": [
+        "host",
+        "perform DNS lookups in Linux."
+    ],
+    "50": [
+        "dig",
+        "DNS lookup utility."
+    ],
+    "51": [
+        "wget",
+        "retrieve files over HTTP, HTTPS, FTP, and FTPS."
+    ],
+    "52": [
+        "curl",
+        "transferring data using various network protocols. (supports more protocols than wget)"
+    ],
+    "53": [
+        "dd",
+        "convert and copy files."
+    ],
+    "54": [
+        "fdisk",
+        "manipulate the disk partition table."
+    ],
+    "55": [
+        "parted",
+        "for creating and manipulating partition tables."
+    ],
+    "56": [
+        "blkid",
+        "command-line utility to locate/print block device attributes."
+    ],
+    "57": [
+        "mkfs",
+        "build a Linux file system."
+    ],
+    "58": [
+        "fsck",
+        " tool for checking the consistency of a file system."
+    ],
+    "59": [
+        "whois",
+        "client for the whois directory service."
+    ],
+    "60": [
+        "nc",
+        "command-line networking utility. (Also, see 60 Linux Networking commands and scripts.)"
+    ],
+    "61": [
+        "umask",
+        "set file mode creation mask."
+    ],
+    "62": [
+        "chmod",
+        "change the access permissions of file system objects."
+    ],
+    "63": [
+        "chown",
+        "change file owner and group."
+    ],
+    "64": [
+        "chroot",
+        "run command or interactive shell with a special root directory."
+    ],
+    "65": [
+        "useradd",
+        "create a new user or update default new user information."
+    ],
+    "66": [
+        "userdel",
+        "used to delete a user account and all related files."
+    ],
+    "67": [
+        "usermod",
+        "used to modify or change any attributes of an existing user account."
+    ],
+    "68": [
+        "vi",
+        "text editor."
+    ],
+    "69": [
+        "cat",
+        "display file contents."
+    ],
+    "70": [
+        "tac",
+        "output file contents, in reverse."
+    ],
+    "71": [
+        "more",
+        "display file contents one screen/page at a time."
+    ],
+    "72": [
+        "less",
+        "similar to the more command with additional features."
+    ],
+    "73": [
+        "tail",
+        "used to display the tail end of a text file or piped data."
+    ],
+    "74": [
+        "dmesg",
+        "prints the message buffer of the kernel ring."
+    ],
+    "75": [
+        "journalctl",
+        "query the systemd journal."
+    ],
+    "76": [
+        "kill",
+        "terminate a process."
+    ],
+    "77": [
+        "killall",
+        "Sends a kill signal to all instances of a process by name."
+    ],
+    "78": [
+        "sleep",
+        "suspends program execution for a specified time."
+    ],
+    "79": [
+        "wait",
+        "Suspend script execution until all jobs running in the background have been terminated."
+    ],
+    "80": [
+        "nohup",
+        "Run Commands in the Background."
+    ],
+    "81": [
+        "screen",
+        "hold a session open on a remote server. (also a full-screen window manager)"
+    ],
+    "82": [
+        "tmux",
+        "a terminal multiplexer."
+    ],
+    "83": [
+        "passwd",
+        "change a userвЂ™s password."
+    ],
+    "84": [
+        "chpassword",
+        "allows users to change the password for various user accounts."
+    ],
+    "85": [
+        "mount",
+        "provides access to an entire filesystem in one directory."
+    ],
+    "86": [
+        "systemctl",
+        "central management tool for controlling the init system."
+    ],
+    "87": [
+        "clear",
+        "clears the screen of the terminal."
+    ],
+    "88": [
+        "env",
+        "Run a command in a modified environment."
+    ]
+}

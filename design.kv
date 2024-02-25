@@ -1,0 +1,209 @@
+#:import utils kivy.utils
+#:import Factory kivy.factory.Factory
+
+<MainWindow>:
+    downButs: downButs
+    upButs: upButs
+    firstLayout: firstLayout
+    meanLayout: meanLayout
+    topBar: topBar
+
+    GridLayout:
+        canvas.before:
+            Color:
+                rgb: utils.get_color_from_hex("#2b2b2b")
+            Rectangle:
+                size: self.size
+                pos: self.pos
+        id: firstLayout
+        size: root.width, root.height
+        cols:1
+
+        FloatLayout:
+            canvas.before:
+                Color:
+                    rgb: utils.get_color_from_hex("#0f2a2b")
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+            id: topBar
+            size_hint_y: None
+            height: root.height/15
+            Button:
+                text: "->"
+                on_release:
+                    app.st.thereader()
+                    app.root.current = 'story'
+                    root.manager.transition.direction = "left"
+                pos_hint: {'right': 1, 'y': 0}
+                size_hint: None, None
+                height: root.topBar.height*0.99
+                width: self.height
+
+        GridLayout:
+            id: meanLayout
+            cols:1
+            padding: 10, 70, 10, 40
+
+        AnchorLayout:
+            anchor_x: 'center'
+            anchor_y: 'center'
+            size_hint_y: None
+            height: root.upButs.height
+            GridLayout:
+                id: upButs
+                padding: 20, 30, 20, 50
+                spacing: 5
+                size_hint: None, None
+                height: root.downButs.height/2 if root.number - 16 < 9 else root.downButs.height/1.45
+                width: self.minimum_width
+
+        GridLayout:
+            canvas.before:
+                Color:
+                    rgb: utils.get_color_from_hex("#0f2a2b")
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+            id: downButs
+            cols: 8
+            rows: 2
+            padding: 10, 10, 10, 100
+            spacing: 2
+            size_hint_y: None
+            height: self.minimum_height
+
+<Story>:
+
+    topBar: topBar
+    boxList: boxList
+    GridLayout:
+        canvas.before:
+            Color:
+                rgb: utils.get_color_from_hex("#2b2b2b")
+            Rectangle:
+                size: self.size
+                pos: self.pos
+        id: firstLayout
+        size: root.width, root.height
+        cols:1
+
+        FloatLayout:
+            canvas.before:
+                Color:
+                    rgb: utils.get_color_from_hex("#0f2a2b")
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+            id: topBar
+            size_hint_y: None
+            height: root.height/15
+            pos_hint: {'top': 1}
+
+            Button:
+                text: "<-"
+                on_release:
+                    app.root.current = 'main'
+                    root.manager.transition.direction = "right"
+                pos_hint: {'x': 0, 'y': 0}
+                size_hint: None, None
+                height: root.topBar.height*0.99
+                width: self.height
+
+        GridLayout:
+            id: boxList
+            cols: 1
+
+
+
+
+<DownButtons@Button>:
+    size_hint_y: None
+    height: self.width
+    color: (45/255, 222/255, 67/255)
+    background_color: (75/255, 0/255, 155/255)
+    background_normal: ''
+    bold: True
+
+<UpButtons@Button>:
+    size_hint_x: None
+    width: self.height
+    color: (200/255, 45/255, 67/255)
+    pos_hint: {'center_x': .5, 'center_y': .5}
+    background_normal: ''
+
+<Topics@Button>:
+    height: sp(50)
+    size_hint_y: None
+    background_color: (87/255, 112/255, 124/255)
+    background_normal: ''
+
+<MeanLabel>:
+    Label:
+        text: root.text
+        size_hint_y: None
+        text_size: self.width, None
+        height: self.texture_size[1]
+        halign: 'center'
+        valign: 'middle'
+
+
+<WinPopup>:
+    id: pop_win
+    size_hint: .4, .2
+    auto_dismiss: False
+
+    Button:
+        text: "Next"
+        on_press: root.close_pop()
+
+
+<LoosePopup>:
+    id: pop_loose
+    size_hint: .4, .2
+    auto_dismiss: False
+    title: "Wrong!"
+
+    Button:
+        text: "Restart"
+        on_press: root.close_pop()
+
+
+<StoryPopup>:
+    message: message
+
+    id: pop_story
+    auto_dismiss: False
+    title: "Wrong!"
+
+    GridLayout:
+        canvas.before:
+            Color:
+                rgb: utils.get_color_from_hex("#0f2a2b")
+            Rectangle:
+                size: self.size
+                pos: self.pos
+        id: grid
+        padding: [20, 10]
+        cols: 1
+        AnchorLayout:
+            anchor_x: "center"
+            anchor_y: "bottom"
+            width: max(message.width, butt.width)
+            padding: [20, 10]
+            MeanLabel:
+                id: message
+        AnchorLayout:
+            anchor_x: "center"
+            anchor_y: "bottom"
+            size_hint: None, None
+            height: butt.height
+            width: max(message.width, butt.width)
+            Button:
+                id: butt
+                text: 'Close'
+                size_hint: None, None
+                size: self.texture_size
+                padding: [10, 5]
+                on_release: root.dismiss()
+
